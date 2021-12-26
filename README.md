@@ -8,11 +8,11 @@ This is a part of the array from G2A:
 ```c++
 const string TXT_SPELLS[MAX_SPELL] =
 {
-	"Light",						// SPL_LIGHT			=	0;
-	"Fire ball",					// SPL_FIREBALL			=	1;
-	"Fear",							// SPL_FEAR				=	2;
-	"Heal",							// SPL_HEAL				=	3;
-//  and so on
+	"Light",	// SPL_LIGHT			=	0;
+	"Fire ball",	// SPL_FIREBALL			=	1;
+	"Fear",		// SPL_FEAR				=	2;
+	"Heal",		// SPL_HEAL				=	3;
+//	and so on
 // 	...
 };
 ```
@@ -20,25 +20,25 @@ But in the spell item instance definitions you still have to either type out the
 ```c++
 INSTANCE ItArRuneLight (C_Item)
 {
-	name 				=	NAME_Rune;
+	name		=	NAME_Rune;
 
-	mainflag 			=	ITEM_KAT_RUNE;
-	flags 				=	0;
+	mainflag	=	ITEM_KAT_RUNE;
+	flags		=	0;
 
-	value 				=	300;
+	value		=	300;
 
-	visual				=	"ItAr_Rune_42.3ds";
-	material			=	MAT_STONE;
+	visual		=	"ItAr_Rune_42.3ds";
+	material	=	MAT_STONE;
 
-	spell				= 	SPL_LIGHT;
-	mag_circle 			= 	1;
+	spell		= 	SPL_LIGHT;
+	mag_circle	= 	1;
 
-	description			=	"Light";
+	description	=	"Light";
 	
-	TEXT	[0]			=	NAME_Mag_Circle;		COUNT	[0]		=	mag_circle;
-	TEXT	[1]			=	NAME_Manakosten;		COUNT	[1]		=	SPL_SENDCAST_LIGHT;
+	TEXT	[0]	=	NAME_Mag_Circle;		COUNT	[0]		=	mag_circle;
+	TEXT	[1]	=	NAME_Manakosten;		COUNT	[1]		=	SPL_SENDCAST_LIGHT;
 
-	TEXT	[5]			=	NAME_Value;				COUNT	[5]		=	value;
+	TEXT	[5]	=	NAME_Value;			COUNT	[5]		=	value;
 };
 ```
 
@@ -70,7 +70,7 @@ INSTANCE ItArRuneLight (C_Item)
 	TEXT	[0]			=	NAME_Mag_Circle;		COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;		COUNT	[1]		=	SPL_SENDCAST_LIGHT;
 
-	TEXT	[5]			=	NAME_Value;				COUNT	[5]		=	value;
+	TEXT	[5]			=	NAME_Value;			COUNT	[5]		=	value;
 };
 ```
 
